@@ -10,8 +10,7 @@ const ImgProvider = ({ children }) => {
     const response = await fetch ("https://pokeapi.co/api/v2/pokemon/?limit=2000")
     const dataImg = await response.json();
     setData(dataImg);
-    console.log(dataImg);
-
+   
   };
   
  dataConsult();

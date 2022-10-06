@@ -22,7 +22,7 @@ const DetailsPokemon = () => {
       {character && (
         <>
         <div className="container-pokemon">
-          <card className="container-card">
+          <div className="container-card">
             <h3>{name}</h3>
             <div>
               <img
@@ -31,9 +31,9 @@ const DetailsPokemon = () => {
                 alt={character.name}
               />
             </div>
-          </card>
+          </div>
 
-          <card className="container-description">
+          <div className="container-description">
           
             <h4 className="text">Puntos de Salud: {character.stats[0].base_stat}</h4>
             <h4>Ataque: {character.stats[1].base_stat}</h4>
@@ -41,7 +41,7 @@ const DetailsPokemon = () => {
             <h4>Ataque Especial: {character.stats[3].base_stat}</h4>
             <h4>Defensa Especial: {character.stats[4].base_stat}</h4>
             <h4>Velocidad: {character.stats[5].base_stat}</h4>
-          </card>
+          </div>
           </div>
         </>
       )}
