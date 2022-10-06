@@ -1,0 +1,14 @@
+Vistas:
+- Home (bienvenida)
+    - titulo (h1)
+    - descripcion (p)
+    - imagen
+- buscar pokemon
+    - titulo (h1)
+    - Select
+    - Button
+- mostrar detalles
+    - card
+        - imagen (Nombre en el objecto del API: sprites)
+        - estadisticas (Nombre en el objecto del API: stats)
+        - Tipo (Nombre en el objecto del API: type)
