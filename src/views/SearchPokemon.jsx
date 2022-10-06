@@ -33,8 +33,8 @@ const navigate = useNavigate()
 
             <select className='selector' onChange={event => goPokemon(event.target.value)}>
                 <option value="">POKEMÓN</option>
-                {data.results.sort(organize).map((personaje) => (
-                    <option key={personaje.name} value={personaje.name}> {personaje.name}</option>
+                {data.results.sort(organize).map((poke) => (
+                    <option key={personaje.name} value={poke.name}> {poke.name}</option>
                 ))}
             </select>
             </div>
