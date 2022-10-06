@@ -27,14 +27,13 @@ const navigate = useNavigate()
     return (
         <>
         <div className='search'>
-            {console.log(data)}
             <h2>Selecciona un Pokemón</h2>
             <p className='arrow'>⬇️</p> 
 
             <select className='selector' onChange={event => goPokemon(event.target.value)}>
                 <option value="">POKEMÓN</option>
                 {data.results.sort(organize).map((poke) => (
-                    <option key={personaje.name} value={poke.name}> {poke.name}</option>
+                    <option key={poke.name} value={poke.name}> {poke.name}</option>
                 ))}
             </select>
             </div>
