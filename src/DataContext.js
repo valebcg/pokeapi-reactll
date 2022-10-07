@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 
-export const Context = createContext();
+export const DataContext = createContext();
 
 const ImgProvider = ({ children }) => {
   const [data, setData] = useState([]);
