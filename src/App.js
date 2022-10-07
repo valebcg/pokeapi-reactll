@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ImgProvider from "./Context";
+import ImgProvider from "./context/apiProvider";
 import NavBar from "./components/NavBar";
 import Home from "./views/Home";
 import SearchPokemon from "./views/SearchPokemon";
