@@ -1,10 +1,8 @@
 import React, { createContext, useEffect, useState } from "react";
 
-<<<<<<<< HEAD:src/context/apiProvider.js
 export const apiContext = createContext();
-========
-export const DataContext = createContext();
->>>>>>>> 7c6a023e5c723399a2a0cbeacf599349f3327a6f:src/DataContext.js
+
+
 
 const ImgProvider = ({ children }) => {
   const [data, setData] = useState([]);
@@ -21,14 +19,14 @@ const ImgProvider = ({ children }) => {
   }, []);
 
   return (
-    <Context.Provider
+    <apiContext.Provider
       value={{
         data,
         setData,
       }}
     >
       {children}
-    </Context.Provider>
+    </apiContext.Provider>
   );
 };
 

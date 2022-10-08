@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { apiProvider } from '../context/apiProvider' ;
+import { apiContext } from '../context/apiProvider' ;
 
 
 const SearchPokemon = () => {
-    const { data } = useContext(apiProvider);
+    const { data } = useContext(apiContext);
  
   
 const navigate = useNavigate()
